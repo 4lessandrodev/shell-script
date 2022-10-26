@@ -22,6 +22,7 @@
 # v1.0.0 25-10-2022
 #	- Início do programa
 # 	- Funcionalilidade menu de opções
+#	- Opções de comandos -s -v -h
 #
 # ------------------------------------------------------------------
 #
@@ -36,18 +37,12 @@ USERS="$(cat /etc/passwd | cut -d : -f 1)"
 FILE_NAME="$0"
 VERSION="v1.0.0"
 MESSAGE="
-	 $FILE_NAME - [OPTIONS]
+	 $(basename $FILE_NAME) - [OPTIONS]
 
 	 -h - Help Menu
 	 -v - Version
 	 -s - Sort
 "
-# ------------------------------------------------------------------
-
-
-# -------------------------------------------------------------TESTS
-
-
 # ------------------------------------------------------------------
 
 
